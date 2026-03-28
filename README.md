@@ -207,7 +207,7 @@ The MCP Servers listed here can be used with various compatible clients:
 
 ## Skills & Rules for AEC
 
-> Skills and Rules are persistent instructions that customize AI assistant behavior in IDEs like Cursor, VS Code, and others. Below are resources relevant to the AEC industry.
+> Skills and Rules are persistent instructions that customize AI assistant behavior in IDEs like Cursor, VS Code, and others. Below are resources curated for AEC professionals — from workflow discipline skills to language-specific coding rules.
 
 ### What are they?
 
@@ -215,21 +215,117 @@ The MCP Servers listed here can be used with various compatible clients:
 - **Skills** (`SKILL.md`): On-demand procedural instructions — "how-to" playbooks that agents apply when the task is relevant.
 - **AGENTS.md**: Alternative file at the project root to guide AI agents.
 
-### Collections & Frameworks
-
-| Resource | Description | Link |
-|----------|-------------|------|
-| [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | The largest curated list of `.cursorrules` files. 38,700+ stars. Organized by framework and language. | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| [cursor-rules-and-prompts](https://github.com/thehimel/cursor-rules-and-prompts) | Comprehensive collection of rules and prompts for enforcing coding standards. | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
-| [cursorskills](https://github.com/bluriesophos/cursorskills) | Reusable SKILL.md files — planning, code review, debugging, and data management workflows. | [GitHub](https://github.com/bluriesophos/cursorskills) |
-| [cursor-anthropic-skills](https://github.com/SteelMorgan/cursor-anthropic-skills) | Anthropic-optimized cursor skills for structured agent workflows. | [GitHub](https://github.com/SteelMorgan/cursor-anthropic-skills) |
-
 ### AEC-Specific Resources
 
 | Resource | Description | Link |
 |----------|-------------|------|
-| [cad2data-Revit-IFC-DWG-DGN](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN) | Automated CAD/BIM conversion workflows. Batch processing, validation, QTO reports, cost estimation, and carbon footprint analysis. No Autodesk license required. 284+ stars. | [GitHub](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN) |
+| [cad2data-Revit-IFC-DWG-DGN](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN) | Automated CAD/BIM conversion workflows with AI agent integration. Batch processing, validation, QTO reports, cost estimation, and carbon footprint analysis. No Autodesk license required. 284+ stars. | [GitHub](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN) |
 | [Debugging Revit Plugins with Cursor](https://aps.autodesk.com/blog/debugging-revit-plugins-cursor-modern-developer-workflow) | Official Autodesk guide on debugging C# Revit add-ins using Cursor IDE with pre-configured debugging setup. | [Blog](https://aps.autodesk.com/blog/debugging-revit-plugins-cursor-modern-developer-workflow) |
+
+### Workflow & Discipline Skills
+
+> From [cursorskills](https://github.com/bluriesophos/cursorskills) — process-oriented skills that bring structure to AEC development. Install by copying the skill folder to `~/.cursor/skills/` (personal) or `.cursor/skills/` (project).
+
+| Skill | What it does | Why it matters for AEC |
+|-------|-------------|----------------------|
+| [battle-plan](https://github.com/bluriesophos/cursorskills/tree/main/battle-plan) | Complete planning ritual before significant tasks — scope, risk assessment, estimation, confirmation. | Complex BIM automation and plugin development needs upfront planning. |
+| [pre-mortem](https://github.com/bluriesophos/cursorskills/tree/main/pre-mortem) | Imagines failure scenarios and reorders the implementation plan to address high-risk items first. | Prevents costly mistakes in Revit transactions, IFC processing, and structural analysis scripts. |
+| [split-decision](https://github.com/bluriesophos/cursorskills/tree/main/split-decision) | Presents 2-4 options as a comparison table with trade-offs before committing to architecture/technology choices. | Choosing between BIM APIs, data formats (IFC vs RVT), or simulation approaches. |
+| [code-review](https://github.com/bluriesophos/cursorskills/tree/main/code-review) | Structured review against 14 quality criteria (design, security, performance, testing). | Essential for reviewing Revit add-ins and Grasshopper components before deployment. |
+| [debug-to-fix](https://github.com/bluriesophos/cursorskills/tree/main/debug-to-fix) | Full debug cycle: clarify, investigate, fix, verify. Prevents jumping to fixes. | Debugging Revit API issues, Grasshopper data trees, and IFC parsing errors. |
+| [prove-it](https://github.com/bluriesophos/cursorskills/tree/main/prove-it) | Verifies outcomes before declaring tasks complete. Run the code, test the fix. | Ensures BIM scripts actually produce correct geometry/data before sign-off. |
+| [safe-refactor](https://github.com/bluriesophos/cursorskills/tree/main/safe-refactor) | Refactoring cycle with risk assessment, preparation, implementation, and verification. | Refactoring large Revit plugins or shared BIM utility libraries safely. |
+| [trace-it](https://github.com/bluriesophos/cursorskills/tree/main/trace-it) | Traces all callers before modifying shared code (utils, types, configs). | Prevents "fixed one thing, broke three others" in shared BIM libraries. |
+| [breadcrumbs](https://github.com/bluriesophos/cursorskills/tree/main/breadcrumbs) | Leaves notes for future sessions in `.cursor/breadcrumbs.md`. | Long-running BIM automation projects benefit from session-to-session memory. |
+| [pair-mode](https://github.com/bluriesophos/cursorskills/tree/main/pair-mode) | Transforms agent into a pair programming partner that explains reasoning. | Learning Revit API, IfcOpenShell, or Grasshopper scripting with guided assistance. |
+| [you-sure](https://github.com/bluriesophos/cursorskills/tree/main/you-sure) | Pauses before destructive/irreversible actions with impact checklist. | Prevents accidental model corruption in Revit transactions or database operations. |
+
+### Domain-Specific Skills
+
+> From [cursor-anthropic-skills](https://github.com/SteelMorgan/cursor-anthropic-skills) — 70+ specialized skills covering development, data, MCP, and more. The skills below are particularly relevant for AEC workflows.
+
+**Document & Data Processing**
+
+| Skill | Description | AEC Use Case |
+|-------|-------------|-------------|
+| [Document Processing (PDF)](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Create, merge, extract from PDFs. Fillable forms support. | Technical specs, construction docs, RFIs |
+| [Document Processing (Excel)](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Spreadsheet creation, data analysis, charts, formulas. | BOQs, cost estimates, quantity takeoffs |
+| [Document Processing (DOCX)](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Word document creation and report generation. | Project reports, meeting minutes, RFPs |
+| [Document Processing (PPTX)](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Presentation and slide deck creation. | Client presentations, design reviews |
+| [Visual OCR](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Text extraction from images via OCR. | Extracting text from scanned drawings and plans |
+| [Document Structure Analysis](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Analyze document layouts and structure. | Parsing technical specifications and contracts |
+
+**MCP Development**
+
+| Skill | Description | AEC Use Case |
+|-------|-------------|-------------|
+| [MCP Server Architecture](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Design and implement MCP servers. | Building custom AEC MCP servers |
+| [MCP Integration](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Multi-server orchestration and workflows. | Connecting Revit + IFC + GIS MCP servers |
+| [MCP Protocol](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | MCP specification and standards compliance. | Ensuring MCP compliance for BIM tools |
+| [MCP Testing](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Testing MCP server implementations. | QA for AEC MCP servers |
+
+**Data & AI**
+
+| Skill | Description | AEC Use Case |
+|-------|-------------|-------------|
+| [Data Engineering](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | ETL/ELT pipelines, data warehouses, infrastructure. | BIM data pipelines, IFC-to-database ETL |
+| [Data Science](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Statistical modeling, predictive analytics, exploratory analysis. | Construction data analysis, trend prediction |
+| [Computer Vision](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Image processing, recognition, and analysis. | Site monitoring, progress tracking from photos |
+| [3D Art](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | 3D assets, modeling, and optimization. | 3D visualization for architectural models |
+
+**Development & DevOps**
+
+| Skill | Description | AEC Use Case |
+|-------|-------------|-------------|
+| [Debugging](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Structured error debugging and root cause analysis. | Debugging Revit add-ins and Grasshopper scripts |
+| [Code Review](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Structured code quality review. | Review of BIM plugin code |
+| [Docker Operations](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Container management, compose, health checks. | Containerized BIM processing, MCP server deployment |
+| [PowerShell](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Windows scripting and automation. | Windows automation for AEC tools (most run on Windows) |
+| [Mermaid Diagrams](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Flowcharts, sequence diagrams, ERDs, Gantt charts. | Process flows, project timelines, architecture diagrams |
+| [Technical Writing](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | User guides, tutorials, technical documentation. | Plugin documentation, API guides |
+| [API Documentation](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | OpenAPI specs, SDK generation, developer docs. | Documenting BIM APIs and MCP servers |
+| [Git Flow](https://github.com/SteelMorgan/cursor-anthropic-skills/tree/main/custom-skills/claude-agent-skills) | Branch management, release management, Git workflow. | Version control for BIM plugin projects |
+
+### Coding Rules (Language-Specific)
+
+> From [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) (38,700+ stars) — `.cursorrules` files organized by language. Below are the ones most relevant to AEC development stacks.
+
+**Python** (Dynamo, IfcOpenShell, MCP servers, data processing)
+
+| Rule | Link |
+|------|------|
+| Python Best Practices | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/python-cursorrules-prompt-file-best-practices) |
+| Python Developer | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/python-developer-cursorrules-prompt-file) |
+| Python Projects Guide | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/python-projects-guide-cursorrules-prompt-file) |
+| Python FastAPI Best Practices | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/python-fastapi-best-practices-cursorrules-prompt-f) |
+| Python Containerization | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/python-containerization-cursorrules-prompt-file) |
+| Python LLM/ML Workflow | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/python-llm-ml-workflow-cursorrules-prompt-file) |
+
+**C# / .NET** (Revit API, Civil 3D, Tekla, ArcGIS Pro)
+
+| Rule | Link |
+|------|------|
+| Unity C# (similar patterns to Revit C#) | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/unity-cursor-ai-c-cursorrules-prompt-file) |
+
+**TypeScript** (MCP servers, web dashboards, Speckle integrations)
+
+| Rule | Link |
+|------|------|
+| TypeScript Code Convention | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/typescript-code-convention-cursorrules-prompt-file) |
+| TypeScript + Node.js + Next.js + AI | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/typescript-nodejs-nextjs-ai-cursorrules-prompt-fil) |
+| TypeScript LLM Tech Stack | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/typescript-llm-tech-stack-cursorrules-prompt-file) |
+
+**General**
+
+| Rule | Link |
+|------|------|
+| Code Guidelines | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/code-guidelines-cursorrules-prompt-file) |
+| Code Style Consistency | [GitHub](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/code-style-consistency-cursorrules-prompt-file) |
+
+### Skill & Rule Generation Frameworks
+
+| Resource | Description | Link |
+|----------|-------------|------|
 | [cursor-custom-agents-rules-generator](https://github.com/bmadcode/cursor-custom-agents-rules-generator) | Framework for automatic rule and custom agent generation. Useful as a base for creating AEC-specific rules. | [GitHub](https://github.com/bmadcode/cursor-custom-agents-rules-generator) |
 
 ### Community Skills & Rules (Open for Contribution)
