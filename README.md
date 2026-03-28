@@ -1,54 +1,56 @@
-# Awesome MCP for AEC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome AI Tools for AEC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Uma lista curada de servidores **Model Context Protocol (MCP)**, **Skills**, **Cursor Rules** e **aplicações de IA** voltados para o setor de **Arquitetura, Engenharia e Construção (AEC)**. O objetivo é reunir recursos que ajudem profissionais do setor a integrar inteligência artificial nos seus fluxos de trabalho — desde modelagem BIM até gestão de obras.
+A curated list of **Model Context Protocol (MCP) servers**, **Skills**, **Rules**, and **AI applications** for the **Architecture, Engineering, and Construction (AEC)** industry. The goal is to gather resources that help professionals integrate artificial intelligence into their workflows — from BIM modeling to construction site management.
 
-O [MCP](https://modelcontextprotocol.io/) é um protocolo aberto que permite que modelos de IA interajam de forma segura com recursos locais e remotos por meio de servidores padronizados.
+[MCP](https://modelcontextprotocol.io/) is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.
 
-> **Contribua!** Este repositório é colaborativo. Se você conhece algum MCP Server, Skill ou ferramenta de IA relevante para AEC que não está listada, abra uma [issue](../../issues) ou envie um [pull request](../../pulls). Consulte o [CONTRIBUTING.md](CONTRIBUTING.md) para saber como contribuir.
+> **Contribute!** This repository is collaborative. If you know of any MCP Server, Skill, or AI tool relevant to AEC that is not listed, open an [issue](../../issues) or submit a [pull request](../../pulls). See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
----
-
-## Aviso de Segurança
-
-> **Atenção:** Servidores MCP executam código na sua máquina com as mesmas permissões do processo hospedeiro. Sempre revise o código antes de instalar, execute em ambientes isolados quando possível e limite as permissões ao mínimo necessário.
+🇧🇷 [Versão em Português](README.pt-BR.md)
 
 ---
 
-## Sumário
+## Security Warning
 
-- [Clientes MCP Compatíveis](#clientes-mcp-compatíveis)
+> **Warning:** MCP servers execute code on your machine with the same permissions as the host process. Always review code before installing, run in isolated environments when possible, and limit permissions to the minimum required.
+
+---
+
+## Table of Contents
+
+- [Compatible MCP Clients](#compatible-mcp-clients)
 - [MCP Servers](#mcp-servers)
-  - [BIM & Modelagem 3D](#-bim--modelagem-3d)
+  - [BIM & 3D Modeling](#-bim--3d-modeling)
   - [IFC & openBIM](#-ifc--openbim)
-  - [Design Paramétrico](#-design-paramétrico)
-  - [Engenharia Estrutural & FEA](#-engenharia-estrutural--fea)
-  - [Simulação Energética & Sustentabilidade](#-simulação-energética--sustentabilidade)
-  - [Engenharia Civil & Infraestrutura](#-engenharia-civil--infraestrutura)
-  - [Geoespacial & GIS](#-geoespacial--gis)
-  - [Colaboração & Plataformas BIM](#-colaboração--plataformas-bim)
-  - [Gestão de Obras & Custos](#-gestão-de-obras--custos)
-  - [Documentação & PDFs](#-documentação--pdfs)
-  - [Bancos de Dados](#-bancos-de-dados)
-  - [Busca & Web](#-busca--web)
-  - [Visualização de Dados](#-visualização-de-dados)
-  - [Ferramentas de Desenvolvimento](#-ferramentas-de-desenvolvimento)
-- [Cursor Skills & Rules para AEC](#cursor-skills--rules-para-aec)
-- [Aplicações de IA para AEC](#aplicações-de-ia-para-aec)
-  - [Estimativa de Custos](#-estimativa-de-custos)
-  - [Gestão de Projetos & Planejamento](#-gestão-de-projetos--planejamento)
-  - [Monitoramento de Obras & LiDAR](#-monitoramento-de-obras--lidar)
-  - [Design Generativo & Assistentes](#-design-generativo--assistentes)
-- [Recursos Educacionais](#recursos-educacionais)
-- [Como Contribuir](#como-contribuir)
+  - [Parametric Design](#-parametric-design)
+  - [Structural Engineering & FEA](#-structural-engineering--fea)
+  - [Energy Simulation & Sustainability](#-energy-simulation--sustainability)
+  - [Civil Engineering & Infrastructure](#-civil-engineering--infrastructure)
+  - [Geospatial & GIS](#-geospatial--gis)
+  - [BIM Collaboration Platforms](#-bim-collaboration-platforms)
+  - [Construction Management & Cost](#-construction-management--cost)
+  - [Documents & Files](#-documents--files)
+  - [Databases](#-databases)
+  - [Search & Web](#-search--web)
+  - [Data Visualization](#-data-visualization)
+  - [Development Tools](#-development-tools)
+- [Skills & Rules for AEC](#skills--rules-for-aec)
+- [AI Applications for AEC](#ai-applications-for-aec)
+  - [Cost Estimation](#-cost-estimation)
+  - [Project Management & Planning](#-project-management--planning)
+  - [Site Monitoring & LiDAR](#-site-monitoring--lidar)
+  - [Generative Design & Assistants](#-generative-design--assistants)
+- [Educational Resources](#educational-resources)
+- [How to Contribute](#how-to-contribute)
 
 ---
 
-## Clientes MCP Compatíveis
+## Compatible MCP Clients
 
-Os MCP Servers listados aqui podem ser utilizados com diversos clientes compatíveis:
+The MCP Servers listed here can be used with various compatible clients:
 
-| Cliente | Documentação |
-|---------|-------------|
+| Client | Documentation |
+|--------|---------------|
 | [Claude Desktop](https://claude.ai) | [Claude x MCP](https://modelcontextprotocol.io/quickstart) |
 | [Cursor](https://www.cursor.com/) | [Cursor x MCP](https://docs.cursor.com/advanced/model-context-protocol) |
 | [VS Code](https://code.visualstudio.com/) | [VS Code x MCP](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) |
@@ -60,248 +62,266 @@ Os MCP Servers listados aqui podem ser utilizados com diversos clientes compatí
 
 ## MCP Servers
 
-### 🏗️ BIM & Modelagem 3D
+### 🏗️ BIM & 3D Modeling
 
-> Servidores que permitem interação direta com ferramentas BIM como Revit e Tekla via linguagem natural.
+> Servers that enable direct interaction with BIM tools like Revit and Tekla via natural language.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [RevitMCPBridge2026](https://github.com/WeberG619/RevitMCPBridge2026) | 705+ endpoints MCP para controle completo do Revit 2026 via named pipes. Criação de paredes, portas, vistas, documentação e verificação de conformidade. | Python / C# |
-| [Revit 2026 MCP Server](https://github.com/antonhofstader/Revit-2026-MCP-Server) | Servidor MCP para Revit 2026 com add-in C# e comunicação via JSON-RPC. Consulta de elementos, modificação de parâmetros e criação de vistas. | Python / C# |
-| [Revit MCP (mcp-servers-for-revit)](https://github.com/mcp-servers-for-revit) | Organização com múltiplas implementações MCP para Revit (TypeScript e Python). | TS / Python |
-| [Revit AI](https://aiconnectorforrevit.com/) | 50+ ferramentas de IA integradas ao Revit. Conecta com Claude, Cursor, Copilot via MCP. 25,000+ usuários. Versão gratuita com 37 ferramentas de leitura. | - |
-| [APS MCP Server (Revit Automation)](https://github.com/autodesk-platform-services/aps-sample-mcp-server-revit-automation) | Automação Revit na nuvem via Autodesk Automation API com autenticação SSA. | Python |
-| [APS MCP Server (Python)](https://github.com/autodesk-platform-services/aps-mcp-server-python) | Servidor MCP para Autodesk Platform Services com diferentes abordagens de autenticação. | Python |
-| [Autodesk MCP Servers](https://www.autodesk.com/solutions/autodesk-ai/autodesk-mcp-servers) | Servidores MCP oficiais da Autodesk para Revit, AutoCAD, Inventor e Navisworks. | - |
-| [TeklaMCPServer](https://github.com/YuriyKirillov/TeklaMCPServer) | Servidor MCP para Tekla Structures. Inserção/remoção de componentes, seleção de elementos, gestão de propriedades e operações geométricas. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [RevitMCPBridge2026](https://github.com/WeberG619/RevitMCPBridge2026) | 705+ MCP endpoints for full Revit 2026 control via named pipes. Wall creation, door placement, views, documentation, and code compliance checks. | Python / C# |
+| [Revit 2026 MCP Server](https://github.com/antonhofstader/Revit-2026-MCP-Server) | MCP server for Revit 2026 with C# add-in and JSON-RPC communication. Element queries, parameter modification, and view creation. | Python / C# |
+| [Revit MCP (mcp-servers-for-revit)](https://github.com/mcp-servers-for-revit) | Organization hosting multiple MCP implementations for Revit (TypeScript and Python). 363+ stars. | TS / Python |
+| [APS AECDM MCP](https://github.com/autodesk-platform-services/aps-aecdm-mcp-dotnet) | .NET MCP Server connecting Claude Desktop with the AEC Data Model API. Query design data, filter elements by category, and render models in the Viewer. | C# / .NET |
+| [APS Revit MCP Tools Bundle](https://github.com/autodesk-platform-services/aps-sample-revit-mcp-tools-bundle) | AppBundle for Automation API for Revit 2026. Execute custom tools on Revit Cloud Models through MCP. | Python |
+| [APS MCP Server (Python)](https://github.com/autodesk-platform-services/aps-mcp-server-python) | MCP server for Autodesk Platform Services with different authentication approaches. | Python |
+| [Autodesk MCP Servers](https://www.autodesk.com/solutions/autodesk-ai/autodesk-mcp-servers) ⭐ | Official Autodesk MCP servers for Revit, AutoCAD, Inventor, and Navisworks. | - |
+| [TeklaMCPServer](https://github.com/YuriyKirillov/TeklaMCPServer) | MCP server for Tekla Structures. Component insertion/removal, element selection, property management, and geometric operations. | Python |
 
 ### 📐 IFC & openBIM
 
-> Interação com arquivos IFC (Industry Foundation Classes) para workflows openBIM.
+> Interaction with IFC (Industry Foundation Classes) files for openBIM workflows.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [ifcMCP](https://github.com/smartaec/ifcmcp) | Servidor MCP para interação com arquivos IFC. Recuperação de entidades, consulta de propriedades, análise espacial e detecção de aberturas em paredes. | Python |
-| [IfcOpenShell](https://ifcopenshell.org/) | Biblioteca open-source para leitura/escrita de arquivos IFC. Base para muitos servidores MCP do setor. | Python / C++ |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [ifcMCP](https://github.com/smartaec/ifcmcp) | MCP server for IFC file interaction. Entity retrieval, property queries, spatial analysis, and wall opening detection. | Python |
+| [IfcOpenShell](https://ifcopenshell.org/) | Open-source library for reading/writing IFC files. Foundation for many AEC MCP servers. | Python / C++ |
 
-### 🎨 Design Paramétrico
+### 🎨 Parametric Design
 
-> Servidores MCP para integração com Rhino e Grasshopper, habilitando design paramétrico assistido por IA.
+> MCP servers for Rhino and Grasshopper integration, enabling AI-assisted parametric design.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [Cordyceps](https://github.com/brookstalley/cordyceps) | Servidor MCP para Rhino 8.21+ com controle completo do Grasshopper (componentes, conexões, grupos) e integração Rhino (bake, layers, renderização). | C# |
-| [GH_mcp_server](https://github.com/veoery/gh_mcp_server) | Interação direta de LLMs com Rhino/Grasshopper. Análise de .3dm, modelagem 3D e geração automática de código GHPython. | Python |
-| [Grasshopper MCP (dongwoosuk)](https://playbooks.com/mcp/dongwoosuk/grasshopper-mcp) | Integração Rhino/Grasshopper com mentoring por IA, otimização de layout com ML e execução de Python no Rhino. | Python |
-| [AI-architecture](https://github.com/Xiaohu1009/AI-architecture) | Integração unificada Rhino + Grasshopper com roteamento inteligente, criação de objetos, operações paramétricas e reconhecimento de padrões. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [Cordyceps](https://github.com/brookstalley/cordyceps) | MCP server for Rhino 8.21+ with full Grasshopper control (components, wiring, groups) and Rhino integration (bake, layers, rendering). | C# |
+| [GH_mcp_server](https://github.com/veoery/gh_mcp_server) | Direct LLM interaction with Rhino/Grasshopper. Analyze .3dm files, 3D modeling, and automatic GHPython code generation. | Python |
+| [Grasshopper MCP (dongwoosuk)](https://playbooks.com/mcp/dongwoosuk/grasshopper-mcp) | Rhino/Grasshopper integration with AI-powered mentoring, ML-based layout optimization, and Python execution in Rhino. | Python |
+| [AI-architecture](https://github.com/Xiaohu1009/AI-architecture) | Unified Rhino + Grasshopper integration with smart routing, object creation, parametric operations, and pattern recognition. | Python |
 
-### 🔩 Engenharia Estrutural & FEA
+### 🔩 Structural Engineering & FEA
 
-> Análise por Elementos Finitos e ferramentas de engenharia estrutural acessíveis via MCP.
+> Finite Element Analysis and structural engineering tools accessible via MCP.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [FEA-MCP](https://github.com/greatapo/fea-mcp) | Servidor MCP para Análise por Elementos Finitos. API unificada para softwares FEA (suporte a ETABS e LUSAS). Modelagem geométrica, análise e pós-processamento. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [FEA-MCP](https://github.com/greatapo/fea-mcp) | MCP server for Finite Element Analysis. Unified API for FEA software (ETABS and LUSAS support). Geometric modeling, analysis, and post-processing. | Python |
 
-### ♻️ Simulação Energética & Sustentabilidade
+### ♻️ Energy Simulation & Sustainability
 
-> Ferramentas para simulação de desempenho energético de edificações.
+> Tools for building energy performance simulation.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [EnergyPlus-MCP](https://www.osti.gov/pages/biblio/3015372) | Primeiro servidor MCP open-source para EnergyPlus. 35 ferramentas especializadas para gestão de modelos, edição, configuração HVAC e execução de simulações. | Python |
-| [idfkit-mcp](https://github.com/idfkit/idfkit-mcp/) | Servidor MCP para simulação energética EnergyPlus. Instalação via pip/uv, suporte a múltiplos clientes (Claude, Cursor, VS Code). | Python |
-| [OpenStudio MCP](https://github.com/NatLabRockies/openstudio-mcp) | 22 skills, 126 ferramentas MCP para simulação energética OpenStudio. Criação, modificação e simulação de modelos energéticos via linguagem natural. Docker support. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [EnergyPlus-MCP](https://www.osti.gov/pages/biblio/3015372) | First open-source MCP server for EnergyPlus. 35 specialized tools for model management, editing, HVAC configuration, and simulation execution. | Python |
+| [idfkit-mcp](https://github.com/idfkit/idfkit-mcp/) | MCP server for EnergyPlus energy simulation. Install via pip/uv, multi-client support (Claude, Cursor, VS Code). | Python |
+| [OpenStudio MCP](https://github.com/NatLabRockies/openstudio-mcp) | 22 skills, 126 MCP tools for OpenStudio energy simulation. Create, modify, and simulate energy models via natural language. Docker support. 450+ tests. | Python |
 
-### 🚧 Engenharia Civil & Infraestrutura
+### 🚧 Civil Engineering & Infrastructure
 
-> Cálculos e ferramentas para engenharia civil, hidrologia e infraestrutura.
+> Calculations and tools for civil engineering, hydrology, and infrastructure.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [Civil Engineering Tools Server](https://ubos.tech/mcp/mcp-civil-tools/overview/) | Cálculos especializados: conversão de coordenadas, curvas IDF, infiltração, estabilidade de taludes, muros de arrimo, escoamento e drenagem. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [Civil Engineering Tools Server](https://ubos.tech/mcp/mcp-civil-tools/overview/) | Specialized calculations: coordinate conversion, IDF curves, infiltration, slope stability, retaining walls, runoff, and drainage analysis. | Python |
 
-### 🌍 Geoespacial & GIS
+### 🌍 Geospatial & GIS
 
-> Integração com ferramentas GIS e serviços de geolocalização.
+> Integration with GIS tools and geolocation services.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [QGIS MCP](https://github.com/jjsantos01/qgis_mcp) | Integração QGIS com IA. Manipulação de projetos/camadas, execução de algoritmos de processamento e código PyQGIS. 866+ stars. | Python |
-| [ArcGIS Pro Bridge](https://market-mcp.com/mcp/arcgis-pro-bridge) | Framework MCP conectando ArcGIS Pro a agentes IA. Consulta de mapas e automação de geoprocessamento via linguagem natural. | C# / .NET |
-| [Mapbox MCP Server](https://github.com/mapbox/mcp-server) | Geocodificação, busca de POIs, roteamento multi-modal, matrizes de tempo de viagem, otimização de rotas e isócronas. | TypeScript |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [QGIS MCP](https://github.com/jjsantos01/qgis_mcp) | QGIS integration with AI. Project/layer manipulation, processing algorithm execution, and PyQGIS code execution. 866+ stars. | Python |
+| [ArcGIS Pro Bridge](https://market-mcp.com/mcp/arcgis-pro-bridge) | MCP framework connecting ArcGIS Pro to AI agents. Map queries and geoprocessing automation via natural language. | C# / .NET |
+| [Mapbox MCP Server](https://github.com/mapbox/mcp-server) | Geocoding, POI search, multi-modal routing, travel time matrices, route optimization, and isochrones. | TypeScript |
 
-### 🤝 Colaboração & Plataformas BIM
+### 🤝 BIM Collaboration Platforms
 
-> Plataformas de colaboração e compartilhamento de dados BIM.
+> Collaboration platforms and BIM data sharing.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [Speckle MCP](https://github.com/bimgeek/speckle-mcp) | Servidor MCP para Speckle — o hub colaborativo de dados AEC. Listagem de projetos, versões de modelos, consulta de objetos e propriedades. | Python |
-| [Trimble Connect](https://developer.tekla.com/trimble-connect) | Plataforma de colaboração na nuvem com APIs para integração, sincronização de dados e suporte a BCF 3.0. | - |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [Speckle MCP](https://github.com/bimgeek/speckle-mcp) | MCP server for Speckle — the collaborative data hub for AEC. Project listing, model versions, object queries, and property retrieval. | Python |
+| [Trimble Connect](https://developer.tekla.com/trimble-connect) | Cloud-based collaboration platform with APIs for integration, data sync, and BCF 3.0 support. | - |
 
-### 💰 Gestão de Obras & Custos
+### 💰 Construction Management & Cost
 
-> Ferramentas de IA para estimativas, planejamento e gestão de projetos de construção (não são MCPs, mas complementam o ecossistema).
+> AI tools for estimates, planning, and construction project management.
 
-| Projeto | Descrição | Tipo |
-|---------|-----------|------|
-| [Planaut](https://planaut.ai/) | Co-piloto IA para gestão de obras. Processa documentos (2000+ páginas), extrai escopo com CSI MasterFormat, gera cronogramas CPM e estimativas de custo. | SaaS |
-| [BuildEngine](https://buildengine.ai/) | Gera estimativas de construção em 6 minutos (40x mais rápido). Simula processo construtivo completo, identifica escopos faltantes. | SaaS |
-| [BuildX Protocol](https://buildx.pro/) | 2.182 calculadoras de custos, IA para perguntas sobre custos de construção e marketplace de subempreiteiros. | SaaS |
-| [BEXEL Manager](https://bexelmanager.com/cost-estimator) | Gestão de custos 5D BIM. Simulações 4D+5D, quantitativos, análise de custos, fluxo de caixa e analytics com IA. | Software |
+| Project | Description | Type |
+|---------|-------------|------|
+| [Planaut](https://planaut.ai/) | AI co-pilot for construction management. Processes documents (2000+ pages), extracts scope with CSI MasterFormat, generates CPM schedules and cost estimates. | SaaS |
+| [BuildEngine](https://buildengine.ai/) | Generates construction estimates in 6 minutes (40x faster). Simulates the entire construction process, identifies missing scopes. | SaaS |
+| [BuildX Protocol](https://buildx.pro/) | 2,182 cost calculators, AI for construction cost questions, and subcontractor marketplace. | SaaS |
+| [BEXEL Manager](https://bexelmanager.com/cost-estimator) | 5D BIM cost management. 4D+5D simulations, quantity takeoff, cost analysis, cash flow, and AI analytics. | Software |
 
-### 📄 Documentação & PDFs
+### 📄 Documents & Files
 
-> Ferramentas para processar documentos técnicos, contratos e especificações.
+> Tools for processing technical documents, contracts, and specifications.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) | Busca e processamento eficiente de conteúdo web para consumo por IA. | Python |
-| [FileSystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) | Acesso direto ao sistema de arquivos local com permissões configuráveis. | TypeScript |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) | Efficient web content fetching and processing for AI consumption. | Python |
+| [FileSystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) | Direct local file system access with configurable permissions. | TypeScript |
 
-### 🗄️ Bancos de Dados
+### 🗄️ Databases
 
-> Acesso a bancos de dados para armazenamento e consulta de dados de projeto.
+> Database access for project data storage and querying.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [PostgreSQL MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) | Integração com PostgreSQL — inspeção de schema e execução de queries. | TypeScript |
-| [SQLite MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) | Operações SQLite com recursos de análise integrados. | Python |
-| [DuckDB MCP](https://github.com/modelcontextprotocol/servers) | Integração DuckDB para análise de dados local de alta performance. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [PostgreSQL MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) | PostgreSQL integration — schema inspection and query execution. | TypeScript |
+| [SQLite MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) | SQLite operations with built-in analysis features. | Python |
+| [DuckDB MCP](https://github.com/modelcontextprotocol/servers) | DuckDB integration for high-performance local data analysis. | Python |
 
-### 🔍 Busca & Web
+### 🔍 Search & Web
 
-> Busca na web e automação de navegador para pesquisas técnicas.
+> Web search and browser automation for technical research.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [Brave Search MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search) | Busca web via API do Brave Search. | TypeScript |
-| [Puppeteer MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer) | Automação de navegador para scraping e interação web. | TypeScript |
-| [Playwright MCP](https://github.com/executeautomation/mcp-playwright) | Automação de navegador via Playwright para testes e scraping. | TypeScript |
-| [ArXiv MCP](https://github.com/modelcontextprotocol/servers) | Busca de artigos científicos no ArXiv — útil para pesquisa técnica. | Python |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [Brave Search MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search) | Web search via Brave Search API. | TypeScript |
+| [Puppeteer MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer) | Browser automation for scraping and web interaction. | TypeScript |
+| [Playwright MCP](https://github.com/executeautomation/mcp-playwright) | Browser automation via Playwright for testing and scraping. | TypeScript |
+| [ArXiv MCP](https://github.com/modelcontextprotocol/servers) | Search scientific papers on ArXiv — useful for technical research. | Python |
 
-### 📊 Visualização de Dados
+### 📊 Data Visualization
 
-> Geração de gráficos e visualizações para análise de dados de projeto.
+> Chart and visualization generation for project data analysis.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [ECharts MCP](https://github.com/modelcontextprotocol/servers) | Geração dinâmica de gráficos com Apache ECharts via IA. | TypeScript |
-| [Mermaid MCP](https://github.com/modelcontextprotocol/servers) | Geração de diagramas e fluxogramas com Mermaid via IA. | TypeScript |
-| [VegaLite MCP](https://github.com/modelcontextprotocol/servers) | Visualizações com VegaLite a partir de dados processados. | TypeScript |
+| Project | Description | Language |
+|---------|-------------|----------|
+| [ECharts MCP](https://github.com/modelcontextprotocol/servers) | Dynamic chart generation with Apache ECharts via AI. | TypeScript |
+| [Mermaid MCP](https://github.com/modelcontextprotocol/servers) | Diagram and flowchart generation with Mermaid via AI. | TypeScript |
+| [VegaLite MCP](https://github.com/modelcontextprotocol/servers) | VegaLite visualizations from processed data. | TypeScript |
 
-### 🛠️ Ferramentas de Desenvolvimento
+### 🛠️ Development Tools
 
-> Ferramentas gerais de desenvolvimento que auxiliam no workflow AEC.
+> General development tools that support AEC workflows.
 
-| Projeto | Descrição | Linguagem |
-|---------|-----------|-----------|
-| [GitHub MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/github) | Integração com GitHub API — gestão de repos, PRs, issues. | TypeScript |
-| [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git) | Operações Git diretas para repositórios locais. | TypeScript |
-| [Docker MCP](https://github.com/modelcontextprotocol/servers) | Operações Docker para containers e stacks compose. | TypeScript |
-
----
-
-## Cursor Skills & Rules para AEC
-
-> Skills e Rules são instruções persistentes que personalizam o comportamento de assistentes IA em IDEs como Cursor. Abaixo estão recursos relevantes para o setor AEC.
-
-### O que são?
-
-- **Rules** (`.cursor/rules/`): Instruções sempre ativas que definem padrões de código, stack tecnológica e convenções do projeto.
-- **Skills** (`SKILL.md`): Instruções procedurais sob demanda — "como fazer" que os agentes aplicam quando a tarefa é relevante.
-- **AGENTS.md**: Arquivo alternativo na raiz do projeto para orientar agentes de IA.
-
-### Skills & Rules relevantes para AEC
-
-| Recurso | Descrição | Aplicação |
-|---------|-----------|-----------|
-| Revit API Rules | Regras de codificação para Revit API (C#/Python) — transações, FilteredElementCollector, convenções. | Desenvolvimento de plugins Revit |
-| Dynamo/Python Rules | Padrões para scripts Dynamo/Python em projetos BIM. | Automação Dynamo |
-| IFC Processing Rules | Convenções para processamento de arquivos IFC com IfcOpenShell. | Parsers e validadores IFC |
-| Civil 3D API Rules | Padrões para desenvolvimento com Civil 3D .NET API. | Plugins Civil 3D |
-| Grasshopper/RhinoCommon Rules | Regras para desenvolvimento de componentes Grasshopper e scripts RhinoCommon. | Design computacional |
-| Construction Docs Rules | Regras para geração automatizada de documentos técnicos e relatórios. | Documentação técnica |
-
-> **Nota:** Esta seção está em construção. Contribua com suas próprias Skills e Rules para expandir o acervo! Veja o template em [CONTRIBUTING.md](CONTRIBUTING.md).
+| Project | Description | Language |
+|---------|-------------|----------|
+| [GitHub MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/github) | GitHub API integration — repo management, PRs, issues. | TypeScript |
+| [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git) | Direct Git operations for local repositories. | TypeScript |
+| [Docker MCP](https://github.com/modelcontextprotocol/servers) | Docker operations for containers and compose stacks. | TypeScript |
 
 ---
 
-## Aplicações de IA para AEC
+## Skills & Rules for AEC
 
-> Ferramentas e plataformas de IA (não necessariamente MCP) que trazem ganhos significativos para profissionais AEC.
+> Skills and Rules are persistent instructions that customize AI assistant behavior in IDEs like Cursor, VS Code, and others. Below are resources relevant to the AEC industry.
 
-### 💵 Estimativa de Custos
+### What are they?
 
-| Ferramenta | Descrição |
-|------------|-----------|
-| [Planaut](https://planaut.ai/) | IA para extração de escopo, cronogramas CPM e estimativas a partir de documentos. |
-| [BuildEngine](https://buildengine.ai/) | Estimativas em 6 minutos simulando o processo construtivo. |
-| [BuildX Protocol](https://buildx.pro/) | 2.182 calculadoras de custos com IA para construção nos EUA. |
-| [BEXEL Manager](https://bexelmanager.com/) | Gestão 5D BIM com simulações 4D+5D e IA. |
+- **Rules** (`.cursor/rules/`): Always-on instructions that define coding standards, tech stack, and project conventions.
+- **Skills** (`SKILL.md`): On-demand procedural instructions — "how-to" playbooks that agents apply when the task is relevant.
+- **AGENTS.md**: Alternative file at the project root to guide AI agents.
 
-### 📋 Gestão de Projetos & Planejamento
+### Collections & Frameworks
 
-| Ferramenta | Descrição |
-|------------|-----------|
-| [Tekla 2026](https://www.tekla.com/) | Assistente IA para modelagem e desenhos de fabricação com linguagem natural. |
-| [Trimble Connect](https://connect.trimble.com/) | Plataforma cloud de colaboração com BCF 3.0 e sincronização em tempo real. |
-| [Speckle](https://speckle.systems/) | "Git para BIM" — colaboração open-source e interoperabilidade entre ferramentas AEC. |
+| Resource | Description | Link |
+|----------|-------------|------|
+| [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | The largest curated list of `.cursorrules` files. 38,700+ stars. Organized by framework and language. | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
+| [cursor-rules-and-prompts](https://github.com/thehimel/cursor-rules-and-prompts) | Comprehensive collection of rules and prompts for enforcing coding standards. | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
+| [cursorskills](https://github.com/bluriesophos/cursorskills) | Reusable SKILL.md files — planning, code review, debugging, and data management workflows. | [GitHub](https://github.com/bluriesophos/cursorskills) |
+| [cursor-anthropic-skills](https://github.com/SteelMorgan/cursor-anthropic-skills) | Anthropic-optimized cursor skills for structured agent workflows. | [GitHub](https://github.com/SteelMorgan/cursor-anthropic-skills) |
 
-### 📡 Monitoramento de Obras & LiDAR
+### AEC-Specific Resources
 
-| Ferramenta | Descrição |
-|------------|-----------|
-| [viLid (viact.ai)](https://www.viact.ai/vilid) | Monitoramento LiDAR 4D com IA para tracking de progresso e detecção de desvios. |
-| [Carlson Point Cloud 2026](https://carlsonps.com/products/carlsonpointcloud) | Processamento de nuvens de pontos de LiDAR, fotogrametria e drones. |
+| Resource | Description | Link |
+|----------|-------------|------|
+| [cad2data-Revit-IFC-DWG-DGN](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN) | Automated CAD/BIM conversion workflows. Batch processing, validation, QTO reports, cost estimation, and carbon footprint analysis. No Autodesk license required. 284+ stars. | [GitHub](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN) |
+| [Debugging Revit Plugins with Cursor](https://aps.autodesk.com/blog/debugging-revit-plugins-cursor-modern-developer-workflow) | Official Autodesk guide on debugging C# Revit add-ins using Cursor IDE with pre-configured debugging setup. | [Blog](https://aps.autodesk.com/blog/debugging-revit-plugins-cursor-modern-developer-workflow) |
+| [cursor-custom-agents-rules-generator](https://github.com/bmadcode/cursor-custom-agents-rules-generator) | Framework for automatic rule and custom agent generation. Useful as a base for creating AEC-specific rules. | [GitHub](https://github.com/bmadcode/cursor-custom-agents-rules-generator) |
 
-### 🎨 Design Generativo & Assistentes
+### Community Skills & Rules (Open for Contribution)
 
-| Ferramenta | Descrição |
-|------------|-----------|
-| [Revit AI](https://aiconnectorforrevit.com/) | 50+ ferramentas IA integradas ao Revit com suporte MCP. 25,000+ usuários. |
-| [OpenPencil](https://github.com/open-pencil/open-pencil) | Editor de design open-source com 90+ ferramentas IA, servidor MCP e export Tailwind CSS. |
+We're building a collection of AEC-specific Skills and Rules. Topics we're looking for:
 
----
+- **Revit API** — Coding conventions for C#/Python Revit plugins (transactions, FilteredElementCollector, parameters)
+- **Dynamo / Python** — Standards for Dynamo scripts in BIM projects
+- **IFC Processing** — Conventions for IfcOpenShell-based parsers and validators
+- **Civil 3D API** — Patterns for Civil 3D .NET API development
+- **Grasshopper / RhinoCommon** — Rules for Grasshopper component development and RhinoCommon scripting
+- **Construction Documentation** — Rules for automated generation of technical documents and reports
 
-## Recursos Educacionais
-
-| Recurso | Descrição |
-|---------|-----------|
-| [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Lista curada de ferramentas open-source para o ambiente construído (BIM, CAD, simulação, digital twins). |
-| [MCP Protocol Docs](https://modelcontextprotocol.io/) | Documentação oficial do Model Context Protocol. |
-| [Modular Reference Architecture for MCP-Servers (Paper)](https://ui.adsabs.harvard.edu/abs/2026arXiv260100809H/abstract) | Paper acadêmico propondo arquitetura modular de referência para servidores MCP em interações BIM agentic. |
-| [Cursor Rules Guide](https://skillsplayground.com/guides/cursor-rules/) | Guia completo sobre Rules e Skills no Cursor IDE. |
+> **Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md) for the template and guidelines.
 
 ---
 
-## Como Contribuir
+## AI Applications for AEC
 
-Contribuições são muito bem-vindas! Consulte o [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes sobre como adicionar novos recursos à lista.
+> AI tools and platforms (not necessarily MCP) that bring significant gains for AEC professionals.
 
-Formas de contribuir:
-- Adicionar novos MCP Servers voltados para AEC
-- Compartilhar Cursor Skills & Rules para desenvolvimento AEC
-- Sugerir aplicações de IA relevantes para o setor
-- Corrigir informações desatualizadas
-- Melhorar descrições e categorização
+### 💵 Cost Estimation
+
+| Tool | Description |
+|------|-------------|
+| [Planaut](https://planaut.ai/) | AI for scope extraction, CPM schedules, and cost estimates from documents. |
+| [BuildEngine](https://buildengine.ai/) | Estimates in 6 minutes simulating the construction process. |
+| [BuildX Protocol](https://buildx.pro/) | 2,182 cost calculators with AI for US construction. |
+| [BEXEL Manager](https://bexelmanager.com/) | 5D BIM management with 4D+5D simulations and AI. |
+
+### 📋 Project Management & Planning
+
+| Tool | Description |
+|------|-------------|
+| [Tekla 2026](https://www.tekla.com/) | AI assistant for modeling and fabrication drawings with natural language. |
+| [Trimble Connect](https://connect.trimble.com/) | Cloud collaboration platform with BCF 3.0 and real-time sync. |
+| [Speckle](https://speckle.systems/) | "Git for BIM" — open-source collaboration and interoperability across AEC tools. |
+
+### 📡 Site Monitoring & LiDAR
+
+| Tool | Description |
+|------|-------------|
+| [viLid (viact.ai)](https://www.viact.ai/vilid) | 4D LiDAR monitoring with AI for progress tracking and deviation detection. |
+| [Carlson Point Cloud 2026](https://carlsonps.com/products/carlsonpointcloud) | Point cloud processing from LiDAR, photogrammetry, and drones. |
+
+### 🎨 Generative Design & Assistants
+
+| Tool | Description |
+|------|-------------|
+| [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
 
 ---
 
-## Legenda
+## Educational Resources
 
-| Símbolo | Significado |
-|---------|-------------|
-| ⭐ | Implementação oficial |
-| 🆕 | Adicionado recentemente |
-| 🔧 | Em desenvolvimento ativo |
-| 📖 | Bem documentado |
+| Resource | Description |
+|----------|-------------|
+| [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Curated list of open-source tools for the built environment (BIM, CAD, simulation, digital twins). |
+| [MCP Protocol Docs](https://modelcontextprotocol.io/) | Official Model Context Protocol documentation. |
+| [Modular Reference Architecture for MCP-Servers (Paper)](https://ui.adsabs.harvard.edu/abs/2026arXiv260100809H/abstract) | Academic paper proposing a modular reference architecture for MCP servers in agentic BIM interactions. |
+| [MCP Servers in Construction (Autodesk Blog)](https://www.autodesk.com/blogs/construction/mcp-servers-in-construction/) | Autodesk blog post explaining MCP servers in the context of construction. |
+| [AI Agents & MCP for Engineers (VIKTOR)](https://www.viktor.ai/blog/196/how-engineers-can-use-ai-agents-and-mcp-servers-to-work-smarter) | Practical guide on how engineers can use AI agents and MCP servers in day-to-day work. |
+| [Cursor Rules Guide](https://skillsplayground.com/guides/cursor-rules/) | Complete guide on Rules and Skills in Cursor IDE. |
 
 ---
 
-## Licença
+## How to Contribute
+
+Contributions are very welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to add new resources.
+
+Ways to contribute:
+- Add new MCP Servers for AEC
+- Share Skills & Rules for AEC development
+- Suggest relevant AI applications for the industry
+- Fix outdated information
+- Improve descriptions and categorization
+
+---
+
+## Legend
+
+| Symbol | Meaning |
+|--------|---------|
+| ⭐ | Official implementation |
+| 🆕 | Recently added |
+| 🔧 | Under active development |
+| 📖 | Well documented |
+
+---
+
+## License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-Na medida do possível sob a lei, os autores renunciaram a todos os direitos autorais e direitos conexos ou vizinhos a este trabalho.
+To the extent possible under law, the authors have waived all copyright and related or neighboring rights to this work.

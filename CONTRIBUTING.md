@@ -1,6 +1,8 @@
-# Guia de Contribuição
+# Guia de Contribuição / Contributing Guide
 
-Obrigado por querer contribuir com o **Awesome MCP for AEC**! Este projeto é colaborativo e sua ajuda é fundamental para mantê-lo relevante e atualizado.
+Obrigado por querer contribuir com o **Awesome AI Tools for AEC**! Este projeto é colaborativo e sua ajuda é fundamental para mantê-lo relevante e atualizado.
+
+Thank you for wanting to contribute to **Awesome AI Tools for AEC**! This project is collaborative and your help is essential to keep it relevant and up to date.
 
 ## Como Contribuir
 
@@ -38,7 +40,7 @@ Adicione na tabela da categoria correspondente, seguindo o formato:
 | [Nome da Ferramenta](URL) | Descrição breve e objetiva do que faz. |
 ```
 
-#### Cursor Skills & Rules
+#### Skills & Rules
 
 Se você tem Skills ou Rules para compartilhar:
 
