@@ -33,6 +33,8 @@ A curated list of **Model Context Protocol (MCP) servers**, **Skills**, **Rules*
   - [Databases](#-databases)
   - [Search & Web](#-search--web)
   - [Data Visualization](#-data-visualization)
+  - [Photogrammetry & Site Scanning](#-photogrammetry--site-scanning)
+  - [IoT & Digital Twins](#-iot--digital-twins)
   - [Development Tools](#-development-tools)
 - [Skills & Rules for AEC](#skills--rules-for-aec)
 - [AI Applications for AEC](#ai-applications-for-aec)
@@ -76,6 +78,15 @@ The MCP Servers listed here can be used with various compatible clients:
 | [APS MCP Server (Python)](https://github.com/autodesk-platform-services/aps-mcp-server-python) | MCP server for Autodesk Platform Services with different authentication approaches. | Python |
 | [Autodesk MCP Servers](https://www.autodesk.com/solutions/autodesk-ai/autodesk-mcp-servers) ⭐ | Official Autodesk MCP servers for Revit, AutoCAD, Inventor, and Navisworks. | - |
 | [TeklaMCPServer](https://github.com/YuriyKirillov/TeklaMCPServer) | MCP server for Tekla Structures. Component insertion/removal, element selection, property management, and geometric operations. | Python |
+| [APS Revit Automation MCP](https://github.com/autodesk-platform-services/aps-sample-mcp-server-revit-automation) | Cloud-native MCP server for headless Revit automation via the Automation API. Works with ACC/BIM360 Cloud Models — no local Revit needed. | C# / .NET |
+| [AutoCAD MCP (PeterPerez01)](https://github.com/PeterPerez01/autocad-mcp) | MCP server for AutoCAD via Windows COM. Intelligent creation (walls, doors, windows, rooms, furniture), geometry, layer management, and entity inspection. | Python |
+| [Blender MCP](https://github.com/ahujasid/blender-mcp) | MCP server for Blender with object manipulation, materials, geometry nodes, Poly Haven assets, Hunyuan3D, and Hyper3D Rodin model generation. 18,300+ stars. | Python |
+| [FreeCAD MCP (ContextForm)](https://github.com/contextform/freecad-mcp) | AI-driven FreeCAD control — sketch creation, 3D operations (extrude, revolve, loft), parametric design, and multi-format file management. 65+ stars. | Python |
+| [FreeCAD Robust MCP](https://github.com/spkane/freecad-robust-mcp-and-more) | Robust FreeCAD MCP server with XML-RPC/JSON-RPC, headless mode, Docker support, and document management tools. 55+ stars. | Python |
+| [OpenSCAD MCP Server](https://github.com/jhacksman/OpenSCAD-MCP-Server) | Natural language to parametric 3D models. Multi-view generation, AI image generation (Gemini/Venice.ai), multi-format export, and 3D printer integration. 139+ stars. | Python |
+| [That Open Engine (components)](https://github.com/ThatOpen/engine_components) | Open-source BIM toolkit — viewer, fragments, property management, spatial indexing, and more. Build full BIM web apps on Three.js. 624+ stars. | TypeScript |
+| [That Open Engine (clay)](https://github.com/ThatOpen/engine_clay) | Lightweight open-source BIM modelling engine for creating and editing 3D BIM geometry programmatically. | TypeScript |
+| [That Open Engine (fragments)](https://github.com/ThatOpen/engine_fragment) | High-performance 3D geometry engine optimized for loading and rendering large BIM models in the browser. 174+ stars. | TypeScript |
 
 ### 📐 IFC & openBIM
 
@@ -85,6 +96,9 @@ The MCP Servers listed here can be used with various compatible clients:
 |---------|-------------|----------|
 | [ifcMCP](https://github.com/smartaec/ifcmcp) | MCP server for IFC file interaction. Entity retrieval, property queries, spatial analysis, and wall opening detection. | Python |
 | [IfcOpenShell](https://ifcopenshell.org/) | Open-source library for reading/writing IFC files. Foundation for many AEC MCP servers. | Python / C++ |
+| [MCP4IFC](https://github.com/Show2Instruct/ifc-bonsai-mcp) | Open-source framework enabling LLMs to directly create and modify IFC building data via MCP. Integrates with Blender/Bonsai add-on and IfcOpenShell. RAG-powered code generation. | Python |
+| [That Open Engine (web-ifc)](https://github.com/ThatOpen/engine_web-ifc) | Reading and writing IFC files with JavaScript at native speeds. WebAssembly-based parser for browser and Node.js. 933+ stars. | TypeScript |
+| [web-ifc-three](https://github.com/ThatOpen/web-ifc-three) | The official IFC Loader for Three.js. Enables rendering IFC models directly in 3D web viewers. 582+ stars. | JavaScript |
 
 ### 🎨 Parametric Design
 
@@ -104,6 +118,8 @@ The MCP Servers listed here can be used with various compatible clients:
 | Project | Description | Language |
 |---------|-------------|----------|
 | [FEA-MCP](https://github.com/greatapo/fea-mcp) | MCP server for Finite Element Analysis. Unified API for FEA software (ETABS and LUSAS support). Geometric modeling, analysis, and post-processing. | Python |
+| [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace. Conversational workflow from natural language to analysis artifacts with draft, validate, analyze, and code-check loop. 35+ stars. | TypeScript / Python |
+| [Talk with Your ETABS Model (VIKTOR)](https://github.com/viktor-platform/talk-with-your-model) | AI agent for ETABS structural models. Query results, create heat maps, plot deformed shapes, and design pad foundations via natural language. | Python |
 
 ### ♻️ Energy Simulation & Sustainability
 
@@ -122,6 +138,7 @@ The MCP Servers listed here can be used with various compatible clients:
 | Project | Description | Language |
 |---------|-------------|----------|
 | [Civil Engineering Tools Server](https://ubos.tech/mcp/mcp-civil-tools/overview/) | Specialized calculations: coordinate conversion, IDF curves, infiltration, slope stability, retaining walls, runoff, and drainage analysis. | Python |
+| [Civil3D MCP](https://github.com/Sacred-G/Civil3D-mcp) | MCP server for Autodesk Civil 3D. Create, modify, and query civil design elements — points, alignments, profiles, surfaces, and line segments. | C# / TypeScript |
 
 ### 🌍 Geospatial & GIS
 
@@ -132,6 +149,10 @@ The MCP Servers listed here can be used with various compatible clients:
 | [QGIS MCP](https://github.com/jjsantos01/qgis_mcp) | QGIS integration with AI. Project/layer manipulation, processing algorithm execution, and PyQGIS code execution. 866+ stars. | Python |
 | [ArcGIS Pro Bridge](https://market-mcp.com/mcp/arcgis-pro-bridge) | MCP framework connecting ArcGIS Pro to AI agents. Map queries and geoprocessing automation via natural language. | C# / .NET |
 | [Mapbox MCP Server](https://github.com/mapbox/mcp-server) | Geocoding, POI search, multi-modal routing, travel time matrices, route optimization, and isochrones. | TypeScript |
+| [gis-mcp](https://github.com/mahdin75/gis-mcp) | 100+ geospatial tools using Shapely, GeoPandas, PyProj, and Rasterio. Buffer, intersection, Voronoi, transformations, and vector I/O. 126+ stars. | Python |
+| [Overture Maps MCP](https://github.com/srivinod1/overture-mcp-server) | Spatial analytics on Overture Maps data — Places, Buildings, Transportation, Divisions, and Land Use. DuckDB + GeoParquet, no credentials required. | Python |
+| [Axion Planetary MCP](https://github.com/Dhenenjay/axion-planetary-mcp) | Google Earth Engine integration via MCP. 30+ satellite datasets (Landsat, Sentinel, MODIS), NDVI/NDWI, wildfire risk, flood modeling, and deforestation detection. 217+ stars. | Python |
+| [geeViz MCP](https://geeviz.org/mcp_server.html) | Python toolkit for Google Earth Engine with 34 MCP tools. Execute code and inspect live GEE assets via AI assistants. | Python |
 
 ### 🤝 BIM Collaboration Platforms
 
@@ -141,6 +162,7 @@ The MCP Servers listed here can be used with various compatible clients:
 |---------|-------------|----------|
 | [Speckle MCP](https://github.com/bimgeek/speckle-mcp) | MCP server for Speckle — the collaborative data hub for AEC. Project listing, model versions, object queries, and property retrieval. | Python |
 | [Trimble Connect](https://developer.tekla.com/trimble-connect) | Cloud-based collaboration platform with APIs for integration, data sync, and BCF 3.0 support. | - |
+| [Procore MCP Server](https://github.com/zeniasupp0rt-cmyk/procore-mcp-server) | MCP server for Procore construction management. Projects, RFIs, submittals, documents, and budget access via AI assistants. OAuth2 auth. | TypeScript |
 
 ### 💰 Construction Management & Cost
 
@@ -152,6 +174,8 @@ The MCP Servers listed here can be used with various compatible clients:
 | [BuildEngine](https://buildengine.ai/) | Generates construction estimates in 6 minutes (40x faster). Simulates the entire construction process, identifies missing scopes. | SaaS |
 | [BuildX Protocol](https://buildx.pro/) | 2,182 cost calculators, AI for construction cost questions, and subcontractor marketplace. | SaaS |
 | [BEXEL Manager](https://bexelmanager.com/cost-estimator) | 5D BIM cost management. 4D+5D simulations, quantity takeoff, cost analysis, cash flow, and AI analytics. | Software |
+| [OpenConstructionERP](https://github.com/datadrivenconstruction/OpenConstructionERP) | Open-source construction estimation platform. AI-powered takeoff (16 LLM providers), 55K+ cost items, 21 languages, 4D/5D planning, BIM viewer. AGPL-3.0. | Open Source |
+| [Bidwright](https://github.com/braedonsaunders/bidwright) | AI-native construction estimating platform. Bid intake, drawing takeoff with annotations, pricing, scheduling, quote PDF generation, and MCP server. MIT. | Open Source |
 
 ### 📄 Documents & Files
 
@@ -193,6 +217,23 @@ The MCP Servers listed here can be used with various compatible clients:
 | [Mermaid MCP](https://github.com/modelcontextprotocol/servers) | Diagram and flowchart generation with Mermaid via AI. | TypeScript |
 | [VegaLite MCP](https://github.com/modelcontextprotocol/servers) | VegaLite visualizations from processed data. | TypeScript |
 
+### 📷 Photogrammetry & Site Scanning
+
+> Tools for photogrammetry pipelines, drone surveys, and 3D reconstruction.
+
+| Project | Description | Language |
+|---------|-------------|----------|
+| [Metashape MCP](https://github.com/jenkinsm13/metashape-mcp) | AI-powered MCP server for Agisoft Metashape Professional 2.3+. 106 tools across 15 modules — full photogrammetry pipeline from alignment to orthomosaic export. Headless mode for CI. | Python |
+
+### 🏠 IoT & Digital Twins
+
+> Smart building platforms connecting IoT sensors, digital twins, and AI analytics.
+
+| Project | Description | Language |
+|---------|-------------|----------|
+| [CONTEXUS](https://github.com/contexusio/contexus) | Open-source modular smart building framework. 13+ modules, IoT connectivity (LoRaWAN, MQTT, BACnet, Modbus), 3D BIM digital twin with real-time sensor overlays, and AI-powered predictive maintenance. MIT. | TypeScript / Shell |
+| [Digital Twin MCP](https://github.com/aisystant/digital-twin-mcp) | Metamodel-driven digital twin MCP server with 65+ hierarchical indicators, access control, and Cloudflare Workers deployment. | TypeScript |
+
 ### 🛠️ Development Tools
 
 > General development tools that support AEC workflows.
@@ -202,6 +243,8 @@ The MCP Servers listed here can be used with various compatible clients:
 | [GitHub MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/github) | GitHub API integration — repo management, PRs, issues. | TypeScript |
 | [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git) | Direct Git operations for local repositories. | TypeScript |
 | [Docker MCP](https://github.com/modelcontextprotocol/servers) | Docker operations for containers and compose stacks. | TypeScript |
+| [That Open Engine (UI Components)](https://github.com/ThatOpen/engine_ui-components) | Collection of web components for building BIM application interfaces — panels, trees, property tables, and more. | TypeScript |
+| [That Open Engine (Templates)](https://github.com/ThatOpen/engine_templates) | Starter templates for quickly bootstrapping BIM web applications with That Open Engine. | TypeScript |
 
 ---
 
@@ -355,6 +398,8 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | [BuildEngine](https://buildengine.ai/) | Estimates in 6 minutes simulating the construction process. |
 | [BuildX Protocol](https://buildx.pro/) | 2,182 cost calculators with AI for US construction. |
 | [BEXEL Manager](https://bexelmanager.com/) | 5D BIM management with 4D+5D simulations and AI. |
+| [OpenConstructionERP](https://openconstructionerp.com/) | Free, open-source construction estimation. 55K+ cost items, 21 languages, AI takeoff from PDFs/photos/CAD. |
+| [Bidwright](https://github.com/braedonsaunders/bidwright) | AI-native bid workflow — intake, takeoff, pricing, scheduling, and branded PDF quotes. Open-source (MIT). |
 
 ### 📋 Project Management & Planning
 
@@ -363,6 +408,8 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | [Tekla 2026](https://www.tekla.com/) | AI assistant for modeling and fabrication drawings with natural language. |
 | [Trimble Connect](https://connect.trimble.com/) | Cloud collaboration platform with BCF 3.0 and real-time sync. |
 | [Speckle](https://speckle.systems/) | "Git for BIM" — open-source collaboration and interoperability across AEC tools. |
+| [Procore](https://www.procore.com/) | Leading construction management platform with AI features, RFIs, submittals, budgets, and MCP integration. |
+| [VIKTOR](https://www.viktor.ai/) | Engineering platform with AI agents and MCP integration. ETABS/SAP2000 integration, parametric web apps, and LLM-powered workflows. |
 
 ### 📡 Site Monitoring & LiDAR
 
@@ -376,6 +423,8 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | Tool | Description |
 |------|-------------|
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
+| [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace — natural language to analysis artifacts with validation and code-checking. |
+| [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Open-source AI assistant for structural engineering built on Llama2-13b. Design guidance, Python code help, and code compliance. |
 
 ---
 
@@ -384,11 +433,14 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | Resource | Description |
 |----------|-------------|
 | [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Curated list of open-source tools for the built environment (BIM, CAD, simulation, digital twins). |
+| [That Open Engine Docs](https://docs.thatopen.com/) | Official documentation for That Open Engine — open-source BIM libraries for web (IFC parsing, 3D viewer, fragments, components). |
 | [MCP Protocol Docs](https://modelcontextprotocol.io/) | Official Model Context Protocol documentation. |
 | [Modular Reference Architecture for MCP-Servers (Paper)](https://ui.adsabs.harvard.edu/abs/2026arXiv260100809H/abstract) | Academic paper proposing a modular reference architecture for MCP servers in agentic BIM interactions. |
 | [MCP Servers in Construction (Autodesk Blog)](https://www.autodesk.com/blogs/construction/mcp-servers-in-construction/) | Autodesk blog post explaining MCP servers in the context of construction. |
 | [AI Agents & MCP for Engineers (VIKTOR)](https://www.viktor.ai/blog/196/how-engineers-can-use-ai-agents-and-mcp-servers-to-work-smarter) | Practical guide on how engineers can use AI agents and MCP servers in day-to-day work. |
 | [Cursor Rules Guide](https://skillsplayground.com/guides/cursor-rules/) | Complete guide on Rules and Skills in Cursor IDE. |
+| [MCP4IFC Paper (arXiv)](https://arxiv.org/abs/2511.05533) | Research paper on IFC-based building design using LLMs via MCP. Framework for direct IFC manipulation with scene querying, predefined functions, and RAG-powered code generation. |
+| [CONTEXUS Smart Building Docs](https://contexus.io/) | Documentation for the open-source smart building framework — IoT, digital twins, and AI analytics for facility management. |
 
 ---
 
