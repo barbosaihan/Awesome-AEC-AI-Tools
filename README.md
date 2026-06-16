@@ -441,6 +441,7 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | [Cursor Rules Guide](https://skillsplayground.com/guides/cursor-rules/) | Complete guide on Rules and Skills in Cursor IDE. |
 | [MCP4IFC Paper (arXiv)](https://arxiv.org/abs/2511.05533) | Research paper on IFC-based building design using LLMs via MCP. Framework for direct IFC manipulation with scene querying, predefined functions, and RAG-powered code generation. |
 | [CONTEXUS Smart Building Docs](https://contexus.io/) | Documentation for the open-source smart building framework — IoT, digital twins, and AI analytics for facility management. |
+| [Superhighway PropTech Research Agent](https://superhighway.walls.sh/guides/proptech-research-agent) | Guide to building a Python agent that researches PropTech markets, CRE platform landscapes, smart building technology, and real estate fintech using a live web search API. Pay-per-call with USDC via x402. |
 
 ---
 
