@@ -176,6 +176,7 @@ The MCP Servers listed here can be used with various compatible clients:
 | [BEXEL Manager](https://bexelmanager.com/cost-estimator) | 5D BIM cost management. 4D+5D simulations, quantity takeoff, cost analysis, cash flow, and AI analytics. | Software |
 | [OpenConstructionERP](https://github.com/datadrivenconstruction/OpenConstructionERP) | Open-source construction estimation platform. AI-powered takeoff (16 LLM providers), 55K+ cost items, 21 languages, 4D/5D planning, BIM viewer. AGPL-3.0. | Open Source |
 | [Bidwright](https://github.com/braedonsaunders/bidwright) | AI-native construction estimating platform. Bid intake, drawing takeoff with annotations, pricing, scheduling, quote PDF generation, and MCP server. MIT. | Open Source |
+| [OpenTakeoff](https://github.com/Kentucky-ai/opentakeoff) | Open-source, browser-based takeoff engine a person or an AI agent drives the same way. One-click room detection, waste %, materials buy list, and an MCP server (`npx opentakeoff-mcp`) with 11 tools — every measurement records its scale and whether a person or agent made it. Apache-2.0. | Open Source |
 
 ### 📄 Documents & Files
 
