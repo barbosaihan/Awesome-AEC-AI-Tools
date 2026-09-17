@@ -408,6 +408,7 @@ Estamos construindo uma coleção de Skills e Rules específicas para AEC. Tópi
 | [Tekla 2026](https://www.tekla.com/) | Assistente IA para modelagem e desenhos de fabricação com linguagem natural. |
 | [Trimble Connect](https://connect.trimble.com/) | Plataforma cloud de colaboração com BCF 3.0 e sincronização em tempo real. |
 | [Speckle](https://speckle.systems/) | "Git para BIM" — colaboração open-source e interoperabilidade entre ferramentas AEC. |
+| [More Good Reviews](https://moregoodreviews.com) | Gerenciador de reputação com IA para empresas de construção e serviços locais — pedidos de review por email/SMS, sync Google/Facebook, rascunhos de resposta com IA e MCP para Claude/Cursor. |
 | [Procore](https://www.procore.com/) | Plataforma líder de gestão de obras com recursos IA, RFIs, submittals, orçamentos e integração MCP. |
 | [VIKTOR](https://www.viktor.ai/) | Plataforma de engenharia com agentes IA e integração MCP. Integração ETABS/SAP2000, apps web paramétricas e workflows com LLM. |
 
