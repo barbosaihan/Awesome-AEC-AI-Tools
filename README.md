@@ -426,6 +426,7 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace — natural language to analysis artifacts with validation and code-checking. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Open-source AI assistant for structural engineering built on Llama2-13b. Design guidance, Python code help, and code compliance. |
+| [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Browser-based AI rendering for homes: restyles interior photos, turns sketches or 3D planner views into photorealistic interior, exterior and garden renders, and makes before/after videos. Runs on Puter.js with the user's Puter account credits. |
 
 ---
 
