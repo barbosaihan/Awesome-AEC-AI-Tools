@@ -1,4 +1,4 @@
-# Awesome AI Tools for AEC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<img width="1403" height="309" alt="image" src="https://github.com/user-attachments/assets/3df5af36-5101-4442-9711-bd06cfd06df0" /># Awesome AI Tools for AEC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of **Model Context Protocol (MCP) servers**, **Skills**, **Rules**, and **AI applications** for the **Architecture, Engineering, and Construction (AEC)** industry. The goal is to gather resources that help professionals integrate artificial intelligence into their workflows — from BIM modeling to construction site management.
 
@@ -423,6 +423,7 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 
 | Tool | Description |
 |------|-------------|
+| [ArchitecturesAI](https://architecturesai.com/sketch-to-render-ai) | AI render from a hand sketch, SketchUp/clay screenshot or site photo, kept in the same camera view and editable with text. Commercial, with a free trial. |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace — natural language to analysis artifacts with validation and code-checking. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Open-source AI assistant for structural engineering built on Llama2-13b. Design guidance, Python code help, and code compliance. |
