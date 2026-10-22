@@ -405,6 +405,7 @@ Estamos construindo uma coleção de Skills e Rules específicas para AEC. Tópi
 
 | Ferramenta | Descrição |
 |------------|-----------|
+| [More Good Reviews](https://moregoodreviews.com) | Gerenciador de reputação com IA para empresas de construção e serviços locais — pedidos de review por email/SMS, sync Google/Facebook, rascunhos de resposta com IA e MCP para Claude/Cursor. |
 | [Tekla 2026](https://www.tekla.com/) | Assistente IA para modelagem e desenhos de fabricação com linguagem natural. |
 | [Trimble Connect](https://connect.trimble.com/) | Plataforma cloud de colaboração com BCF 3.0 e sincronização em tempo real. |
 | [Speckle](https://speckle.systems/) | "Git para BIM" — colaboração open-source e interoperabilidade entre ferramentas AEC. |
