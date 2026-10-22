@@ -56,6 +56,19 @@ Se você tem Skills ou Rules para compartilhar:
 - Mantenha a **ordem alfabética** dentro de cada categoria
 - Não use adjetivos promocionais exagerados
 
+### Validação local do catálogo / Local catalog checks
+
+PT: Atualize as entradas em `README.md` e `README.pt-BR.md`, com o mesmo URL em ambos. Mantenha o H1 na primeira linha, a descrição preenchida, URLs `http(s)`, a largura e o separador das tabelas. Insira novos itens em ordem alfabética na categoria; o CI não reorganiza itens antigos. Antes de abrir um PR, execute:
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 scripts/check_readmes.py --base-ref main
+```
+
+EN: Update both `README.md` and `README.pt-BR.md` with the same URL. Keep the H1 on the first line, a nonempty description, `http(s)` URLs, valid table widths/separators, and new items alphabetically placed in their category. Run the commands above before opening a PR. `--base-ref` is required and compares with a Git commit; the default head is your working tree (including uncommitted README edits). For two Git refs, use `--base-ref <base> --head-ref <head>`; the validator reads them using `git show` and never runs their code. Omitting `--base-ref` is an error, not a successful validation.
+
+PT/EN: A verificação é incremental: compara erros novos com o baseline, sem bloquear dívidas antigas, e detecta desequilíbrio novo ou agravado de URLs entre idiomas por adição ou remoção. Em `pull_request` e `push`, o workflow usa código do SHA do evento com token somente leitura, sem segredos e sem persistir credenciais. Para `workflow_dispatch`, usa código de `main`; informe opcionalmente um número positivo de PR para checar seus READMEs somente como dados (`git show`), sem executar código desse PR. Sem PR, compara `main` com seu commit anterior; em `push` compara os SHAs do evento. A checagem é apenas sintática/estrutural: não acessa sites nem atesta disponibilidade, relevância para AEC, encaixe na categoria ou ausência de spam. Essas decisões exigem revisão humana. CI verde não é aprovação de produto.
+
 ## Sugerindo melhorias
 
 Além de adicionar recursos, você pode:
