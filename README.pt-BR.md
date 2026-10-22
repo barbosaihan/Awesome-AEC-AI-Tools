@@ -42,6 +42,7 @@ O [MCP](https://modelcontextprotocol.io/) é um protocolo aberto que permite que
   - [Gestão de Projetos & Planejamento](#-gestão-de-projetos--planejamento)
   - [Monitoramento de Obras & LiDAR](#-monitoramento-de-obras--lidar)
   - [Design Generativo & Assistentes](#-design-generativo--assistentes)
+  - [Operações Comerciais e Marketing](#-operações-comerciais-e-marketing)
 - [Recursos Educacionais](#recursos-educacionais)
 - [Como Contribuir](#como-contribuir)
 
@@ -422,9 +423,19 @@ Estamos construindo uma coleção de Skills e Rules específicas para AEC. Tópi
 
 | Ferramenta | Descrição |
 |------------|-----------|
+| [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Renderização com IA no navegador para residências: reestiliza fotos de interiores, transforma esboços ou vistas do planejador 3D em renders fotorrealistas de interiores, fachadas e jardins, e gera vídeos de antes/depois. Roda via Puter.js com os créditos da conta Puter do usuário. |
+| [ArchitecturesAI](https://architecturesai.com/sketch-to-render-ai) | Renderização com IA a partir de esboços à mão, capturas do SketchUp/modelos conceituais ou fotos do local, mantendo o ponto de vista e permitindo ajustes por texto. Comercial, com teste gratuito. |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Editor de design open-source com 90+ ferramentas IA, servidor MCP e export Tailwind CSS. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | Workspace de engenharia estrutural assistido por IA — linguagem natural para artefatos de análise com validação e verificação de código. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Assistente IA open-source para engenharia estrutural baseado no Llama2-13b. Orientação de projeto, ajuda com Python e conformidade com normas. |
+
+### 🏢 Operações Comerciais e Marketing
+
+Ferramentas de apoio comercial que podem complementar a atuação de empresas AEC, separadas das aplicações de projeto técnico e planejamento de obras.
+
+| Ferramenta | Descrição |
+|------------|-----------|
+| [More Good Reviews](https://moregoodreviews.com) | Gestão de reputação com IA, pedidos automáticos de avaliações por email/SMS, sincronização com Google/Facebook, rascunhos de respostas e integração MCP para Claude/Cursor. |
 
 ---
 
