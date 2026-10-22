@@ -1,4 +1,4 @@
-<img width="1403" height="309" alt="image" src="https://github.com/user-attachments/assets/3df5af36-5101-4442-9711-bd06cfd06df0" /># Awesome AI Tools for AEC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome AI Tools for AEC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of **Model Context Protocol (MCP) servers**, **Skills**, **Rules**, and **AI applications** for the **Architecture, Engineering, and Construction (AEC)** industry. The goal is to gather resources that help professionals integrate artificial intelligence into their workflows — from BIM modeling to construction site management.
 
@@ -42,6 +42,7 @@ A curated list of **Model Context Protocol (MCP) servers**, **Skills**, **Rules*
   - [Project Management & Planning](#-project-management--planning)
   - [Site Monitoring & LiDAR](#-site-monitoring--lidar)
   - [Generative Design & Assistants](#-generative-design--assistants)
+  - [Business Operations & Marketing](#-business-operations--marketing)
 - [Educational Resources](#educational-resources)
 - [How to Contribute](#how-to-contribute)
 
@@ -406,7 +407,6 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 
 | Tool | Description |
 |------|-------------|
-| [More Good Reviews](https://moregoodreviews.com) | AI reputation manager for construction and local service firms — automated email/SMS review requests, Google/Facebook sync, AI reply drafting, and MCP for Claude/Cursor. |
 | [Tekla 2026](https://www.tekla.com/) | AI assistant for modeling and fabrication drawings with natural language. |
 | [Trimble Connect](https://connect.trimble.com/) | Cloud collaboration platform with BCF 3.0 and real-time sync. |
 | [Speckle](https://speckle.systems/) | "Git for BIM" — open-source collaboration and interoperability across AEC tools. |
@@ -424,11 +424,19 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 
 | Tool | Description |
 |------|-------------|
+| [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Browser-based AI rendering for homes: restyles interior photos, turns sketches or 3D planner views into photorealistic interior, exterior and garden renders, and makes before/after videos. Runs on Puter.js with the user's Puter account credits. |
 | [ArchitecturesAI](https://architecturesai.com/sketch-to-render-ai) | AI render from a hand sketch, SketchUp/clay screenshot or site photo, kept in the same camera view and editable with text. Commercial, with a free trial. |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace — natural language to analysis artifacts with validation and code-checking. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Open-source AI assistant for structural engineering built on Llama2-13b. Design guidance, Python code help, and code compliance. |
-| [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Browser-based AI rendering for homes: restyles interior photos, turns sketches or 3D planner views into photorealistic interior, exterior and garden renders, and makes before/after videos. Runs on Puter.js with the user's Puter account credits. |
+
+### 🏢 Business Operations & Marketing
+
+Business-support tools that can complement AEC firms' commercial workflows, separate from technical design and construction planning.
+
+| Tool | Description |
+|------|-------------|
+| [More Good Reviews](https://moregoodreviews.com) | AI reputation management with automated email/SMS review requests, Google/Facebook sync, AI reply drafting, and MCP integration for Claude/Cursor. |
 
 ---
 
