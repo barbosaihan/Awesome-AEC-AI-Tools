@@ -428,6 +428,7 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Browser-based AI rendering for homes: restyles interior photos, turns sketches or 3D planner views into photorealistic interior, exterior and garden renders, and makes before/after videos. Runs on Puter.js with the user's Puter account credits. |
 | [ArchitecturesAI](https://architecturesai.com/sketch-to-render-ai) | AI render from a hand sketch, SketchUp/clay screenshot or site photo, kept in the same camera view and editable with text. Commercial, with a free trial. |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
+| [RoomLab.app](https://roomlab.app) | Turns SketchUp, Revit or CAD viewports into photoreal interior and exterior renders, and restyles, virtually stages or declutters room photos. Commercial, with a free trial. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace — natural language to analysis artifacts with validation and code-checking. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Open-source AI assistant for structural engineering built on Llama2-13b. Design guidance, Python code help, and code compliance. |
 

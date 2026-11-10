@@ -427,6 +427,7 @@ Estamos construindo uma coleção de Skills e Rules específicas para AEC. Tópi
 | [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Renderização com IA no navegador para residências: reestiliza fotos de interiores, transforma esboços ou vistas do planejador 3D em renders fotorrealistas de interiores, fachadas e jardins, e gera vídeos de antes/depois. Roda via Puter.js com os créditos da conta Puter do usuário. |
 | [ArchitecturesAI](https://architecturesai.com/sketch-to-render-ai) | Renderização com IA a partir de esboços à mão, capturas do SketchUp/modelos conceituais ou fotos do local, mantendo o ponto de vista e permitindo ajustes por texto. Comercial, com teste gratuito. |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Editor de design open-source com 90+ ferramentas IA, servidor MCP e export Tailwind CSS. |
+| [RoomLab.app](https://roomlab.app) | Transforma viewports do SketchUp, Revit ou CAD em renders fotorrealistas de interiores e exteriores, e redecora, mobilia virtualmente ou organiza fotos de ambientes. Comercial, com teste gratuito. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | Workspace de engenharia estrutural assistido por IA — linguagem natural para artefatos de análise com validação e verificação de código. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Assistente IA open-source para engenharia estrutural baseado no Llama2-13b. Orientação de projeto, ajuda com Python e conformidade com normas. |
 
