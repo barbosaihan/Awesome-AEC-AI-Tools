@@ -78,6 +78,7 @@ The MCP Servers listed here can be used with various compatible clients:
 | [APS Revit MCP Tools Bundle](https://github.com/autodesk-platform-services/aps-sample-revit-mcp-tools-bundle) | AppBundle for Automation API for Revit 2026. Execute custom tools on Revit Cloud Models through MCP. | Python |
 | [APS MCP Server (Python)](https://github.com/autodesk-platform-services/aps-mcp-server-python) | MCP server for Autodesk Platform Services with different authentication approaches. | Python |
 | [Autodesk MCP Servers](https://www.autodesk.com/solutions/autodesk-ai/autodesk-mcp-servers) ⭐ | Official Autodesk MCP servers for Revit, AutoCAD, Inventor, and Navisworks. | - |
+| [Model MCP](https://github.com/sharafutdinovdi/revit-model-mcp) | Open-source MCP server for Autodesk Revit 2022–2027: query, audit and edit live models, with one Undo entry per transactional model edit and a workstation read-only lock. | Python, C# |
 | [TeklaMCPServer](https://github.com/YuriyKirillov/TeklaMCPServer) | MCP server for Tekla Structures. Component insertion/removal, element selection, property management, and geometric operations. | Python |
 | [APS Revit Automation MCP](https://github.com/autodesk-platform-services/aps-sample-mcp-server-revit-automation) | Cloud-native MCP server for headless Revit automation via the Automation API. Works with ACC/BIM360 Cloud Models — no local Revit needed. | C# / .NET |
 | [AutoCAD MCP (PeterPerez01)](https://github.com/PeterPerez01/autocad-mcp) | MCP server for AutoCAD via Windows COM. Intelligent creation (walls, doors, windows, rooms, furniture), geometry, layer management, and entity inspection. | Python |
@@ -427,6 +428,7 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 | [3D House Planner AI](https://www.3dhouseplanner.com/index5.php) | Browser-based AI rendering for homes: restyles interior photos, turns sketches or 3D planner views into photorealistic interior, exterior and garden renders, and makes before/after videos. Runs on Puter.js with the user's Puter account credits. |
 | [ArchitecturesAI](https://architecturesai.com/sketch-to-render-ai) | AI render from a hand sketch, SketchUp/clay screenshot or site photo, kept in the same camera view and editable with text. Commercial, with a free trial. |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | Open-source design editor with 90+ AI tools, MCP server, and Tailwind CSS export. |
+| [RoomLab.app](https://roomlab.app) | Turns SketchUp, Revit or CAD viewports into photoreal interior and exterior renders, and restyles, virtually stages or declutters room photos. Commercial, with a free trial. |
 | [StructureClaw](https://github.com/structureclaw/structureclaw) | AI-assisted structural engineering workspace — natural language to analysis artifacts with validation and code-checking. |
 | [Structural LLaMA](https://github.com/joreilly86/structual_llama) | Open-source AI assistant for structural engineering built on Llama2-13b. Design guidance, Python code help, and code compliance. |
 
