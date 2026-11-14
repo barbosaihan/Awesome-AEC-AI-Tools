@@ -419,6 +419,7 @@ Estamos construindo uma coleção de Skills e Rules específicas para AEC. Tópi
 |------------|-----------|
 | [viLid (viact.ai)](https://www.viact.ai/vilid) | Monitoramento LiDAR 4D com IA para tracking de progresso e detecção de desvios. |
 | [Carlson Point Cloud 2026](https://carlsonps.com/products/carlsonpointcloud) | Processamento de nuvens de pontos de LiDAR, fotogrametria e drones. |
+| [Dozer](https://trydozer.com/) | Assistente de canteiro que lê imagens das câmeras da obra, acompanha horas de máquina, códigos de falha J1939 e manutenção, e rascunha a APR (JHA) e o diário de obra. Comercial, com plano gratuito para uma obra. |
 
 ### 🎨 Design Generativo & Assistentes
 

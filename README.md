@@ -420,6 +420,7 @@ We're building a collection of AEC-specific Skills and Rules. Topics we're looki
 |------|-------------|
 | [viLid (viact.ai)](https://www.viact.ai/vilid) | 4D LiDAR monitoring with AI for progress tracking and deviation detection. |
 | [Carlson Point Cloud 2026](https://carlsonps.com/products/carlsonpointcloud) | Point cloud processing from LiDAR, photogrammetry, and drones. |
+| [Dozer](https://trydozer.com/) | Job site assistant that reads site camera snapshots, tracks machine hours, J1939 fault codes and service, and drafts the JHA and daily report. Commercial, with a free plan for one site. |
 
 ### 🎨 Generative Design & Assistants
 
