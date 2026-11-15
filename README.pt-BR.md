@@ -178,6 +178,7 @@ Os MCP Servers listados aqui podem ser utilizados com diversos clientes compatí
 | [BEXEL Manager](https://bexelmanager.com/cost-estimator) | Gestão de custos 5D BIM. Simulações 4D+5D, quantitativos, análise de custos, fluxo de caixa e analytics com IA. | Software |
 | [OpenConstructionERP](https://github.com/datadrivenconstruction/OpenConstructionERP) | Plataforma open-source de estimativa para construção. Takeoff com IA (16 provedores de LLM), 55K+ itens de custo, 21 idiomas, planejamento 4D/5D, viewer BIM. AGPL-3.0. | Open Source |
 | [Bidwright](https://github.com/braedonsaunders/bidwright) | Plataforma de estimativa de construção AI-native. Intake de licitações, takeoff de desenhos com anotações, precificação, cronograma, geração de PDF de propostas e servidor MCP. MIT. | Open Source |
+| [jobsite-math](https://github.com/johnski9000/jobsite-math) | Calculadoras de construção dos EUA para agentes de IA: inclinação de telhado, telhado de quatro águas, concreto, brita, tijolos, argamassa, tinta, drywall, tábuas de deck, markup e valor por hora. Servidor MCP somente leitura (`npx jobsite-math-mcp`) com 11 ferramentas, e uma biblioteca TypeScript sem dependências. MIT. | Open Source |
 
 ### 📄 Documentação & Arquivos
 
