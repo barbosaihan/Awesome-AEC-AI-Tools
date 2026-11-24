@@ -445,7 +445,7 @@ Ferramentas de apoio comercial que podem complementar a atuação de empresas AE
 
 | Recurso | Descrição |
 |---------|-----------|
-| [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Lista curada de ferramentas open-source para o ambiente construído (BIM, CAD, simulação, digital twins). |
+| [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Lista curada com 210+ ferramentas para o ambiente construído (BIM, IFC, CAD, Revit, simulação, GIS, orçamento, gêmeos digitais e servidores MCP/IA). |
 | [That Open Engine Docs](https://docs.thatopen.com/) | Documentação oficial do That Open Engine — bibliotecas BIM open-source para web (parsing IFC, viewer 3D, fragments, components). |
 | [MCP Protocol Docs](https://modelcontextprotocol.io/) | Documentação oficial do Model Context Protocol. |
 | [Modular Reference Architecture for MCP-Servers (Paper)](https://ui.adsabs.harvard.edu/abs/2026arXiv260100809H/abstract) | Paper acadêmico propondo arquitetura modular de referência para servidores MCP em interações BIM agentic. |
