@@ -446,7 +446,7 @@ Business-support tools that can complement AEC firms' commercial workflows, sepa
 
 | Resource | Description |
 |----------|-------------|
-| [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Curated list of open-source tools for the built environment (BIM, CAD, simulation, digital twins). |
+| [Awesome-AECO](https://github.com/osama-ata/Awesome-AECO) | Curated list of 210+ tools for the built environment (BIM, IFC, CAD, Revit, simulation, GIS, cost estimation, digital twins, and AI/MCP servers). |
 | [That Open Engine Docs](https://docs.thatopen.com/) | Official documentation for That Open Engine — open-source BIM libraries for web (IFC parsing, 3D viewer, fragments, components). |
 | [MCP Protocol Docs](https://modelcontextprotocol.io/) | Official Model Context Protocol documentation. |
 | [Modular Reference Architecture for MCP-Servers (Paper)](https://ui.adsabs.harvard.edu/abs/2026arXiv260100809H/abstract) | Academic paper proposing a modular reference architecture for MCP servers in agentic BIM interactions. |
